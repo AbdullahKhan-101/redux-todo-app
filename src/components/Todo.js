@@ -12,7 +12,8 @@ const Todo = () => {
     return (
     <div>
         <h1>Todo List Will Goes Here</h1>
-        <h2 className="h2">Add Your List Here</h2>
+        <h2 className="h2">Add Your task here</h2>
+        
         <div className="input">
         <Input value={inputData} onChange={(e)=>setInputData(e.target.value)} placeholder="Add Items..." inputProps={{ 'aria-label': 'description' }} />
         <AddIcon id="AddIcon" onClick={()=>dispatch(addTodo(inputData), setInputData(''))}/>
